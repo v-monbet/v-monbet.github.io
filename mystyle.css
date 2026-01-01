@@ -1,0 +1,194 @@
+<style type="text/css">
+body
+{
+	margin: 10px 0 ;
+	padding: 0 ;
+	text-align: left ;
+	font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+	background: #dea ;
+}
+/* On a ajouté de quoi mettre une police de caractère et une couleur de fond */
+
+div#conteneur
+{
+	width: 770px ;
+	margin: 0 auto ;
+	text-align: left ;
+	border: 2px solid #ab4 ;
+	background: #fff ;
+}
+/* Une bordure autour de l'ensemble de la page,
+et couleur blanche pour le fond de celle-ci */
+
+h1#header
+{
+	height: 25px;
+        width: 75px;
+	background: url(irmar_orange.jpg) no-repeat left top;
+}
+/* Une image de fond correspondant aux 258 pixels
+ de tout à l'heure, attention à bien compresser vos images */
+
+h1#header a
+{
+	width: 400px ;
+	height: 70px ;
+	display: block ;
+	background: url(title.gif) no-repeat ;
+	position: relative ;
+	left: 350px ;
+	top: 15px ;
+	text-indent: -5000px ;
+}/* On donne les mêmes dimensions au lien, chose
+ possible grâce à la propriété display: block ; qui transforme le lien
+  en élément de type block, auquel on peut donner des propriétés de taille.
+   On met aussi l'image de fond qui a les mêmes dimensions que le cadre ainsi créé */
+/* Le text-indent négatif est fait pour pouvoir ne
+ cacher le texte hors de la page, ce que nous voulons. Ainsi il reste
+  exploitable pour les syntèses vocales */
+
+
+ul#menu
+{
+	height: 35px ;
+	margin: 0 ;
+	padding: 0 ;
+        background: url(bg_menu.gif) repeat-x 0 -25px ;
+	list-style-type: none ;
+}
+/* On donne une hauteur au menu, correspondant a
+ la taille de l'image utilisée en fond, on met ensuite l'image de fond
+  avec un décalage de 25 pixels vers le haut pour utiliser la technique de roll over expliquée dans un autre tutoriel; 
+*/
+ul#menu li
+{
+	float: left ;
+	text-align: center ;
+}/* On rend les li en flottant pour pouvoir les
+ afficher horizontalement, on cache les puces, et on centre le texte */
+
+ul#menu li a
+{
+	width: 155px ;
+	line-height: 25px ;
+	font-size: 1.2em ;
+	font-weight: bold ;
+	letter-spacing: 2px ;
+	color: #ffffff ;
+        background: 	#9b2 ;
+	display: block ;
+	text-decoration: none ;
+	border-right: 2px solid #dea ;
+}/* C'est sur les liens que le gros du travail est
+ effectué, largeur, hauteur de ligne, taille de police, graisse de police,
+  espacement des lettres, couleur, bordure et decoration du texte. 
+  Nous pouvons dimensionner les a grâce à la propriété display: block ; */
+
+ul#menu li a:hover
+{
+	background: url(bg_menu.gif) repeat-x 0 0 ;
+}/* Et pour finir on décale l'image de fond au passage
+ de la souris pour laisser aparaître l'état survolé de l'image, 
+ voir le tutoriel sur les roll over pour plus de détails */
+
+
+div#contenu
+{
+	padding: 0 30px 0 100px ;
+	background: url(bg_page.gif) no-repeat 15px 15px ;
+}
+/* On ajoute un petit élément décoratif sur le côté
+ de la page et on crée un espace à gauche et à droite du contenu */
+
+div#contenu h2
+{
+	padding-left: 25px ;
+	line-height: 25px ;
+	font-size: 1.4em ;
+	background: url(irmar_orange.jpg) no-repeat left bottom ;
+	color: #9b2 ;
+	border-bottom: 1px solid #9b2 ;
+}
+/* Mise en forme du titre de page, une petite image,
+ on décale le texte en fonction de l'image, on donne un couleur au texte et
+  on met une bordure basse */
+
+div#contenu h3
+{
+	margin-left: 15px ;
+	padding-left: 5px ;
+	border-bottom: 1px solid #9b2 ;
+	border-left: 3px solid #9b2 ;
+	color: #9b2 ;
+}
+/* De même que pour le titre h2, à ceci près qu'on
+ ne donne pas d'image décorative cette fois ci */
+
+div#contenu h4
+{
+	margin-left: 15px ;
+	padding-left: 5px ;
+	
+	
+}
+/* De même que pour le titre h2, à ceci près qu'on
+ ne donne pas d'image décorative cette fois ci */
+
+
+div#contenu p
+{
+	text-align: justify ;
+	text-indent: 0em ;
+        margin-left: 25px ;
+	line-height: 1.7em ;
+}
+/* On rend les paragraphes plus propre, alignement justifié,
+ alinéa et hauteur de ligne supérieure à l'état normal pour aérer le tout */
+
+div#contenu a
+{
+	color: #8a0 ;
+}
+
+div#contenu a:hover
+{
+	color: #9b2;
+}
+/* On met en forme les liens contenu dans la page */
+
+p#footer
+{
+	margin: 0 ;
+	padding-right: 10px ;
+	line-height: 30px ;
+	text-align: right ;
+	color: #8a0 ;
+}
+/* Mise en forme de la partie pied de page, rien d'extra-ordinaire */
+
+pre
+{
+	overflow: auto ;
+	background: #dea ;
+	border: 2px solid #9b2 ;
+	padding: 5px 0 0 5px ;
+	font-size: 1.2em ;
+}
+/*une couleur de fond, une bordure, la taille de police
+ et un léger espace entre le texte et les bords du pre */
+
+pre span
+{
+	color: #560 ;
+}
+/* Couleur de texte des éléments compris dans des span
+ eux mêmes compris dans un pre */
+
+pre span.comment
+{
+	color: #b30000 ;
+}
+/* Couleur différente pour les span.comment, les span
+ utilisés pour les commentaires */
+
+<style>
