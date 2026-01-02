@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Valérie Monbet - enseignement </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Language" content="fr">
+    <link type="text/css" rel="stylesheet"
+      href="GLMpharma_files/mystyle1.html">
+    <script language="Javascript">
+function gatepass(){
+var password=prompt("Password required:", "")
+var location="http://perso.univ-rennes1.fr/valerie.monbet/techni" + password + "/learning.html";
+this.location.href=location;
+}
+</script>
+  </head>
+  <body>
+    <div id="conteneur">
+      <h1 id="header"><a
+          href="https://perso.univ-rennes1.fr/valerie.monbet/GLM/index.html"
+          title="Valérie Monbet - Teaching"><span> </span></a> </h1>
+      <div id="contenu">
+        <ul id="menu">
+          <li><a href="../recherche.html">Research</a></li>
+          <li><a href="../publications.html">Publications</a></li>
+          <li><a href="../enseignement.html">Teaching</a></li>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+        <h2>GLM<br>
+        </h2>
+        <ul>
+          <ul>
+            <hr width="90%" size="1" color="#9b2" align="center">
+            <hr width="90%" size="1" color="#9b2" align="center">
+            <li><b>Modèles linéaires généralisés</b><i><br>
+                Master 2 Spécialité «Modélisation en Pharmacologie
+                Clinique et Epidémiologie»</i></li>
+            <ul>
+              <li> Notes de cours (<a href="GLMpharma.pdf">slides</a>) </li>
+              <li>Codes R<br>
+              </li>
+              <ul>
+                <li><a href="RegressionLineaire.R">RegressionLineaire.R</a>,
+                  Distance de Cook et effet levier : <a
+                    href="CookDistanceLevier_simu.R">CookDistanceLevier_simu.R</a></li>
+                <li> Régression Logistique : <a href="Chediab.R">Chemdiab.R</a>,
+                  <a href="Contraception.R">Contraception.R</a> </li>
+                <li> Régression multinomiale : <a href="multinomial.R">multinomial.R</a>,
+                  <a href="cuse.R"> cuse.R</a> (contraception Salvador)
+                </li>
+                <li> Cas des réponses ordonnées : <a
+                    href="OrderedResponse.R">OrderedResponse.R</a></li>
+                <li> Régression de Poisson : <a href="ceb.R">ceb.R</a>,
+                  données <a href="ceb.Rdata">ceb.Rdata</a></li>
+                <li> Sélection et validation de modèles + régression
+                  Lasso : <a href="SelectionValidation.R">SelectionValidation.R</a></li>
+              </ul>
+              <li> TD (<a href="PharmaGLM_TD.pdf">énoncés</a>)<br>
+              </li>
+              <ul>
+                <li>Données <a href="prostatedatr.txt">prostatedatr.txt</a>
+                  (régression logistique), <a href="mental.txt">mental.txt</a>
+                  (modèle multinomial), <a href="Diabetes_NSW.dat">
+                    Diabetes_NSW.dat </a> (régression de Poisson) </li>
+                <li>Solutions <a href="prostate.R">prostate. R</a>, <a
+                    href="mental.R">mental.R</a>, <a
+                    href="Diabetes_NSW.R">Diabetes_NSW.R</a><br>
+                </li>
+              </ul>
+              <li> Projet (<a href="projet.pdf">énoncés</a>)</li>
+              <ul>
+                <li>Données <a href="hHeartDisease.dat">HeartDisease.Rdata</a>
+                  (<a href="HeartDisease.names">description des
+                    variables</a>), <a href="docvis.Rdata">docvis.Rdata</a><br>
+                </li>
+              </ul>
+            </ul>
+            <hr width="90%" size="1" color="#9b2" align="center">
+            <hr width="90%" size="1" color="#9b2" align="center">
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
