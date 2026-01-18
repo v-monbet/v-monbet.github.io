@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="personal webpage">
+    <meta name="keywords" content="statistic, data science, machine
+      learning, health, environment">
+    <meta name="author" content="Valérie">
+    <link href="EnsembleMethods1Lab_files/css.css" rel="stylesheet"
+      type="text/css">
+    <link rel="stylesheet" type="../../css" href="../../origo.css"
+      title="Research" media="all">
+    <title>Valerie Monbet - Machine Learning</title>
+  </head>
+  <body class="light blue smaller freestyle01">
+    <div id="layout">
+      <div class="row smaller">
+        <div class="col c5 smaller">
+          <h1><a href="../../index.html">Valérie Monbet</a></h1>
+        </div>
+        <div class="col c7 aligncenter">
+          <p class="slogan">teaching/enseignement</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col c12 aligncenter"> <img
+            src="../../IMAGES/moulins.png" alt="" width="600"
+            height="240"> </div>
+      </div>
+      <div class="row">
+        <div class="col c2 alignleft">
+          <ul class="menu">
+            <li><a href="../../CV.html">CV</a></li>
+            <li><a href="../../teaching.html">Teaching</a></li>
+            <li><a href="../../research.html">Research</a></li>
+            <li><a href="../../publications.html">Publications</a></li>
+            <!-- 			<li><a href="#">Layouts</a>
+				<ul class="subpages">
+					<li><a class="current" href="../../index.html">3 columns</a></li>
+					<li><a href="2-col-a.html">2 columns A</a></li>
+					<li><a href="2-col-b.html">2 columns B</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Last link</a></li> -->
+          </ul>
+        </div>
+        <div class="col c8">
+          <h3>Machine Learning</h3>
+          <br>
+          See also <a href="course_material.html">Course material</a>,
+          <a href="labs.html">Other LABS</a>, <a
+            href="course_projects.html">Course projects</a> <br>
+          <br>
+          <h4>LABS</h4>
+          <b>7. Ensemble Models (I)</b> <br>
+          <br>
+          Prediction of a categorical variable with 2 levels<br>
+          <br>
+          We have collected gene expression levels for 4654 genes on 97
+          early-stage breast cancer samples. After surgical removal of
+          the tumour, some unfortunately relapsed within 5 years
+          (label=+1), while other did not (label=0). <br>
+          The goal of the lab in to improve predictiion of relapse given
+          gene expressions using ensemble methods. <br>
+          <br>
+          1. Bagging <br>
+          a. Compute bagging predictions for the relapse dataset and
+          compare the ROC curve with the one of a single tree.<br>
+          R users: Try different values for mfinal and maxdepth <br>
+          Python users: Try different values for n_estimators <br>
+          b. Print a list of the most important variables for prediction<br>
+          Idea : use the knn method based on this variables. <br>
+          <br>
+          2. Random Forest<br>
+          a. Compute Random Forest predictions for the relapse dataset
+          and compare the ROC curve with the one of a single tree.<br>
+          R users: Try different values for mtry and maxdepth <br>
+          Python users: Try different values for n_estimators and
+          max_depth<br>
+          b. Print a list of the most important variables for prediction
+          <br>
+          <br>
+          <br>
+          Codes: <a href="LABS/CancerRelapse_EnsembleMethods_1.py">CancerRelapse_EnsembleMethods_1.py</a>,
+          <a href="LABS/CancerRelapse_EnsembleMethods_1.R">CancerRelapse_EnsembleMethods_1.R</a>,
+          <a href="LABS/Cookies_EnsembleMethods_1.py">Cookies_EnsembleMethods_1.py</a>,
+          <a href="LABS/Cookies_EnsembleMethods_1.R">Cookies_EnsembleMethods_1.R</a>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
