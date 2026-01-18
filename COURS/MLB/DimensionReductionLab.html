@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="personal webpage">
+    <meta name="keywords" content="statistic, data science, machine
+      learning, health, environment">
+    <meta name="author" content="Valérie">
+    <link href="../../css.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../origo.css"
+      title="Research" media="all">
+    <title>Valerie Monbet - Machine Learning</title>
+  </head>
+  <body class="light blue smaller freestyle01">
+    <div id="layout">
+      <div class="row smaller">
+        <div class="col c5 smaller">
+          <h1><a href="../../index.html">Valérie Monbet</a></h1>
+        </div>
+        <div class="col c7 aligncenter">
+          <p class="slogan">teaching/enseignement</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col c12 aligncenter"> <img
+            src="../../IMAGES/moulins.png" alt="" width="600"
+            height="240"> </div>
+      </div>
+      <div class="row">
+        <div class="col c2 alignleft">
+          <ul class="menu">
+            <li><a href="../../CV.html">CV</a></li>
+            <li><a href="../../teaching.html">Teaching</a></li>
+            <li><a href="../../research.html">Research</a></li>
+            <li><a href="../../publications.html">Publications</a></li>
+            <!-- 			<li><a href="#">Layouts</a>
+				<ul class="subpages">
+					<li><a class="current" href="../../index.html">3 columns</a></li>
+					<li><a href="2-col-a.html">2 columns A</a></li>
+					<li><a href="2-col-b.html">2 columns B</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Last link</a></li> -->
+          </ul>
+        </div>
+        <div class="col c8">
+          <h3>Machine Learning</h3>
+          <br>
+          See also <a href="../../course_material.html">Course material</a>,
+          <a href="../../labs.html">Other LABS</a>, <a
+            href="../../course_projects.html">Course projects</a> <br>
+          <br>
+          <h4>LABS</h4>
+          <b>2. Dimension reduction methods</b> <br>
+          <br>
+          Goal : use the dimension reduction methods on the digits
+          dataset. <br>
+          Example : code examples are provided for the old poteries
+          data.<br>
+          <br>
+          Steps<br>
+          1. Download the digits dataset<br>
+          # Python<br>
+          import matplotlib.pyplot as plt<br>
+          from urllib.request import urlopen<br>
+url="https://perso.univ-rennes1.fr/valerie.monbet/doc/cours/digits_extrait_images.csv"<br>
+          digits=np.loadtxt(urlopen(url),
+          delimiter=',',skiprows=1,usecols=range(1,785))<br>
+url="https://perso.univ-rennes1.fr/valerie.monbet/doc/cours/digits_extrait_labels.csv"<br>
+          labels=np.loadtxt(urlopen(url),
+          delimiter=',',skiprows=1,usecols=range(1,2))<br>
+          plt.imshow(np.reshape(digits[1,:],[28,28])) # plot of the 1st
+          image<br>
+          # R<br>
+url="https://perso.univ-rennes1.fr/valerie.monbet/doc/cours/digits_extrait_images.csv"<br>
+          digits = read.csv(url,header=TRUE,sep=",")<br>
+          digits = digits[,-1]<br>
+url="https://perso.univ-rennes1.fr/valerie.monbet/doc/cours/digits_extrait_labels.csv"<br>
+          labels = read.csv(url,header=TRUE,sep=",")<br>
+          labels = labels[,2]<br>
+          image(matrix(as.matrix(digits[1,]),28,28,byrow=TRUE)) # plot
+          of the 1st image<br>
+          <br>
+          <br>
+          2. Vizualization with PCA<br>
+          Run the PCA, plot the observations on the first plan with a
+          color per digit<br>
+          <br>
+          3. Reconstruction with PCA<br>
+          Run the PCA, use the eigenvalues barplot to select a good
+          number of components, reconstruct the images in the low
+          dimension space.<br>
+          Choose one image in the dataset, plot the initial image and
+          its approximation.<br>
+          <br>
+          4. Vizualization with MDS<br>
+          Compare the plot obtained in 2. with the one obtained using
+          MDS<br>
+          <br>
+          5. Vizualization with t-SNE<br>
+          Run t-SNE on the digits data for different perplexity.<br>
+          Plot the results with a color per digit.<br>
+          <br>
+          <br>
+          Codes: <a href="LABS/Poteries_DimensionReduction.py">Poteries_DimensionReduction_FC.py</a>,
+          <a href="LABS/Poteries_DimensionReduction.R">Poteries_DimensionReduction.R</a>,
+          <a href="digits_DimensionReduction_ToStart.py">digits_DimensionReduction_ToStart.py</a>,
+          <a href="LABS/digits_ReductionDimension_ToStart.R">digits_DimensionReduction_ToStart.R</a>,
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
